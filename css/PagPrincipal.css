@@ -1,0 +1,15 @@
+.TopBar{
+    background-color:#fa8fb1;
+    height: 110px;
+    width: 100%;
+}
+.BodyContent{
+    background-color: #ffe4ec;
+    height: 793px;
+    width: 100%;
+}
+.Footer{
+    background-color:#fa8fb1;
+    height: 50px;
+    width: 100%;
+}
