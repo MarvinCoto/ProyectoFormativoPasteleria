@@ -18,7 +18,8 @@ nav {
     bottom: 0;
     height: 100%;
     left: 0;
-    background: #fff;
+    background: #fa8fb1;
+    ;
     width: 90px;
     overflow: hidden;
     transition: width 0.2s linear;

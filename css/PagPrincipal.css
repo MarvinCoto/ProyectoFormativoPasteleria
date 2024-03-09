@@ -1,15 +1,149 @@
-.TopBar{
-    background-color:#fa8fb1;
-    height: 110px;
+.TopBar {
+    background-color: #fa8fb1;
+    height: 10vh;
     width: 100%;
 }
-.BodyContent{
+
+.BodyContent {
     background-color: #ffe4ec;
-    height: 793px;
+    height: 85vh;
     width: 100%;
 }
-.Footer{
-    background-color:#fa8fb1;
-    height: 50px;
+
+.Footer {
+    background-color: #fa8fb1;
+    height: 5vh;
     width: 100%;
 }
+
+/*Titulo*/
+.Tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.TittleInner {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.TittleText {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f74780;
+}
+
+/* carrousel*/
+
+
+.carousel-container {
+    margin: auto;
+    
+    /* Centrar horizontalmente */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    /* Bordes curvos */
+    background-color: #f74780;
+    /* Fondo rosa */
+    height: 430px;
+    /* Altura fija del fondo rosa */
+    width: 1050px;
+    margin-top: 0;
+    /* Eliminar margen superior */
+    margin-bottom: 20px 20px 20px 20px;
+    /* Espacio entre el carrusel y el siguiente contenido */}
+
+
+.carousel {
+    max-width: 100%;
+    /* Ancho máximo del carrusel */
+    height: 100%;
+    /* Altura máxima del carrusel */
+    border-radius: 20px;
+    /* Bordes curvos */
+}
+
+.carousel img {
+    padding-top: 20px;
+    max-width: 1000px;
+    /* Tamaño máximo de las imágenes */
+    height: auto;
+    margin: auto;
+    /* Centrar las imágenes horizontalmente */
+    object-fit: cover;
+    /* Escalar las imágenes manteniendo la proporción y recortando si es necesario */
+    object-position: center;
+    border-radius: 20px 20px 20px 20px;
+    /* Centrar las imágenes verticalmente */
+}
+
+/* Image Box */
+
+.tarjeta {
+    
+    width: 220px; /* Ancho de cada tarjeta un poco más grande que la imagen */
+    height: 140px; /* Altura de cada tarjeta un poco más grande que la imagen */
+    background-color: #fda5c0; /* Fondo de las tarjetas */
+    border-radius: 10px; /* Bordes curvos de las tarjetas */
+    display: flex; /* Tarjeta flexibles */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 50px; /* Margen alrededor de cada tarjeta */
+    overflow: hidden; /* Ocultar contenido que exceda el tamaño de la tarjeta */
+}
+
+.tarjeta img {
+    max-width: 200px; /* Tamaño máximo de las imágenes dentro de las tarjetas */
+    max-height: 200px; /* Tamaño máximo de las imágenes dentro de las tarjetas */
+    border-radius: 10px; /* Bordes curvos de las imágenes */
+}
+
+.tarjetas {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    width: 100%; 
+}
+
+/*menu*/
+
+nav {
+
+    z-index: 1000;
+
+}
+
+nav ul {
+    list-style-type: none;
+    /* Elimina los marcadores de lista */
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+    /* Espacio entre elementos del menú */
+}
+
+nav ul li a {
+    color: black;
+    /* Color del texto */
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+
+
+
