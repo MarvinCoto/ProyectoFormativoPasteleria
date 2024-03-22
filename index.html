@@ -11,6 +11,8 @@
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             rel="stylesheet">
+            <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+            <link rel="stylesheet" href="js/PagPrincipal.js">
         <style>
         
 
@@ -103,28 +105,56 @@
                     </div>
                     
                 </div>
+
                 
                 <!-- tarjetas -->
                 <div class="tarjetas">
                     <div class="tarjeta">
                         <img src="./img/Carrousel img 2.jpg" alt="Imagen 1">
+                        <h8 class="card-title">Pastel de chocolate</h3>
+                                    <br>
+                                    <p class="card-text">$10.00</p>
+                                    <br>
+                                    <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
                     </div>
                     
                     <div class="tarjeta">
                         <img src="./img/Carrousel img 2.jpg" alt="Imagen 2">
+                        <h8 class="card-title">Pastel de chocolate</h3>
+                            <br>
+                            <p class="card-text">$10.00</p>
+                            <br>
+                            <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
                     </div>
                     
                     <div class="tarjeta">
                         <img src="./img/Carrousel img 2.jpg" alt="Imagen 3">
+                        <h8 class="card-title">Pastel de chocolate</h3>
+                            <br>
+                            <p class="card-text">$10.00</p>
+                            <br>
+                            <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
                     </div>
                     
                     <div class="tarjeta">
                         <img src="./img/Carrousel img 2.jpg" alt="Imagen 4">
+                        <h8 class="card-title">Pastel de chocolate</h3>
+                            <br>
+                            <p class="card-text">$10.00</p>
+                            <br>
+                            <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
                     </div>
                     
                 </div>
                 
             </div>
+
+            <script>
+                function reservarPastel()
+                {
+                    swal("Good job!", "You clicked the button!", "success")
+                }
+                </script>
 
             <div class="Footer">
                 <footer>
