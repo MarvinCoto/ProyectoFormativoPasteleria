@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/Style.css">
     <link rel="stylesheet" href="./css/PagPrincipal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <link rel="stylesheet" href="js/pastelDelDia.js">
 </head>
 <body>
     <! -- Menu Principal --!>
@@ -49,6 +51,7 @@
     <div class="TopBar">
 
         <center>
+            <br>
         <h1>Pastel del día </h1>
     <br><br>
 
@@ -58,12 +61,24 @@
     <div class="card" style="width: 18rem;">
         <img src="img/pastelChocolate.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Pastel de chocolate</h5>
+            <br>
+          <h3 class="card-title">Pastel de chocolate</h3>
+            <br>
           <p class="card-text">El pastel del día trata de un delicioso pastel de chocolate con textura humeda y con chocolate en su interior a solo 12.00$</p>
-          <a href="#" class="btn btn-primary">Guardar Pastel</a>
+          <br>
+          <button onclick="guardarPastel();">Guardar</button>
         </div>
       </div>
     </center>
+
+    
+
+<script>
+    function guardarPastel()
+{
+    swal ( "Excelente" , "Se ha guardado el pastel del día" , " éxito " )   ;
+}
+</script>
         
     </div>
     <div class="BodyContent">
