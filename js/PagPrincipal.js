@@ -1,5 +1,5 @@
 function reservarPastel()
 {
-    swal("Good job!", "You clicked the button!", "success")
+    swal("Gracias!", "Has reservado el pastel", "success")
 }
 

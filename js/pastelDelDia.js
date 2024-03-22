@@ -1,4 +1,4 @@
 function guardarPastel()
 {
-    swal ( "Excelente" , "Se ha guardado el pastel del día" , " éxito " )   ;
+    swal("Gracias!", "Has guardado el pastel del día", "success")
 }
