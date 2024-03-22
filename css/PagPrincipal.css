@@ -4,10 +4,17 @@
     width: 100%;
 }
 
+
 .BodyContent {
     background-color: #ffe4ec;
     height: 85vh;
     width: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
 }
 
 .Footer {
@@ -88,33 +95,59 @@
     /* Centrar las imágenes verticalmente */
 }
 
-/* Image Box */
+/* Tarjetas */
 
-.tarjeta {
-    
-    width: 220px; /* Ancho de cada tarjeta un poco más grande que la imagen */
-    height: 140px; /* Altura de cada tarjeta un poco más grande que la imagen */
-    background-color: #fda5c0; /* Fondo de las tarjetas */
-    border-radius: 10px; /* Bordes curvos de las tarjetas */
-    display: flex; /* Tarjeta flexibles */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    margin: 50px; /* Margen alrededor de cada tarjeta */
-    overflow: hidden; /* Ocultar contenido que exceda el tamaño de la tarjeta */
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
 }
 
-.tarjeta img {
-    max-width: 200px; /* Tamaño máximo de las imágenes dentro de las tarjetas */
-    max-height: 200px; /* Tamaño máximo de las imágenes dentro de las tarjetas */
-    border-radius: 10px; /* Bordes curvos de las imágenes */
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
 }
 
-.tarjetas {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    width: 100%; 
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translate(-3%);
 }
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 5px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    color: #f74780;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #f74780;
+    border-radius: 4px;
+}
+
 
 /*menu*/
 
@@ -142,6 +175,12 @@ nav ul li a {
     /* Elimina el subrayado del enlace */
     font-weight: bold;
     /* Texto en negrita */
+}
+
+/*footer*/
+
+.footer{
+    background-color: #f74780;
 }
 
 
