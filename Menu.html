@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú</title>
-    <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pasteleria</title>
+        <link rel="stylesheet" href="./css/Style.css">
+        <link rel="stylesheet" href="./css/PagPrincipal.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet">
+            <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+            <link rel="stylesheet" href="js/PagPrincipal.js">
+            <link rel="stylesheet" href="css/menu.css">
+    </head>
 <body>
     
     <nav>
@@ -19,7 +27,7 @@
             </li>
             <br>
             <br>
-            <li><a href="#">
+            <li><a href="index.html">
             <i class="fas fa-home"></i>
             <span class="nav-item">Inicio</span>
             </a></li>
@@ -32,22 +40,114 @@
             </a></li>
             <br>
             <br>
-            <li><a href="#">
+            <li><a href="PastelDelDía.html">
                 <i class="fas fa-home"></i>
                 <span class="nav-item">Pastel del dia</span>
             </a></li>
             <br>
             <br>
-            <li><a href="#">
+            <li><a href="sobre nosotros.html">
                 <i class="fas fa-home"></i>
                 <span class="nav-item">Sobre Nosotros</span>
             </a></li>
         </ul>
     </nav>
 
+
     <br>
     <br>
     <center><h1>MENÚ</h1></center>
+
+    <center>
+<div id="divMenu">
+
+        <div id="pastelChocolate" class="card" style="width: 18rem;">
+            <img src="img/pastelChocolate.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <br>
+              <h3 class="card-title">Pastel de chocolate</h3>
+                <br>
+              <p class="card-text">Pastel de chocolate, Textura alta relleno de chocolate, con bolitas de chocolate en su relleno. Precio $12.50</p>
+              <br>
+              <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
+            </div> 
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="img/red-velvet-cake-recipe-SQUARE.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <br>
+              <h3 class="card-title">Pastel de Red Velvet</h3>
+                <br>
+              <p class="card-text">Pastel red velvet, textura alta, con la receta secreta, y frutos rojos</p>
+              <br>
+              <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
+            </div> 
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="img/tres-leches-cake-11-square.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <br>
+              <h3 class="card-title">Pastel de tres leches </h3>
+                <br>
+              <p class="card-text">Pastel de tres leches, bañado en leche entera, dulce de leche y leche condensada, textura remojada. Precio $11.50</p>
+              <br>
+              <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
+            </div> 
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+            <img src="img/cheesecake-de-yogur-en-microondas_version_1683345628.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <br>
+              <h3 class="card-title">Pastel de cheescake</h3>
+                <br>
+              <p class="card-text">El pastel tradicional de la casa, con ingredientes secretos, textura alta y cremosa, relleno de mermelada y fresas. Precio $15.50</p>
+              <br>
+              <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
+            </div> 
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="img/frutas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <br>
+              <h3 class="card-title">Pastel de frutas</h3>
+                <br>
+              <p class="card-text">El pastel para toda ocasion, pastel con textura tradicional alta, relleno de leche y fruta por encima</p>
+              <br>
+              <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
+            </div> 
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="img/images.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <br>
+              <h3 class="card-title">Tartaletas </h3>
+                <br>
+              <p class="card-text">Tartaleta de la casa, rellena de leche y frutas. Precio $11.50</p>
+              <br>
+              <button onclick="reservarPastel();" type="button" class="btn btn-outline-success">Reservar</button>
+            </div> 
+        </div>
+
+</div>
+
+
+
+
+
+
+<script>
+function reservarPastel()
+{
+    swal("Good job!", "You clicked the button!", "success")
+}
+</script>
+
+    </center>
 
     .
 
